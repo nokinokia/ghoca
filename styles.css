@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HR+Lijeva&family=Rubik+Distressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HR+Lijeva:wght@100..400&display=swap');
+@import url(Rubik_Distressed/RubikDistressed-Regular.ttf);
+
+body.playwrite-hr-lijeva-uniquifier {
+    margin: 0;
+    font-family: "Playwrite HR Lijeva", cursive;
+    font-family: "Playwrite HR Lijeva", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #12eadb;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+header .logo img {
+    transition: transform 0.3s ease;
+    margin-left: 150%;
+    max-width: 40%;
+}
+
+header .logo img:hover {
+    transform: rotate(360deg);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 20px;
+    margin-top: -7%;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-family: "Rubik Distressed", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header nav ul li a:hover {
+    color: #ff5722;
+}
+
+.hero {
+    background: url('https://t4.ftcdn.net/jpg/02/67/40/21/360_F_267402109_jZvsqRQUvSxohAOmcUt549jlapqoRHM0.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    overflow: hidden;
+}
+marquee{
+  direction:down;
+  width:250;
+  height:200;
+  behavior:alternat
+  style="border:solid"
+}
+
+.rubik-distressed-regular {
+    font-family: "Rubik Distressed", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://img.freepik.com/free-vector/dark-gradient-background-with-copy-space_53876-99548.jpg);
+    background-size: cover;
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    font-family: "Rubik Distressed", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.hero h1 {
+    font-size: 3em;
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero p {
+    font-size: 1.5em;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.btn-primary {
+    background: #ff5722;
+    color: #7b3b3b;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #e64a19;
+}
+
+.section-about, .section-services, .section-gallery, .section-contact {
+    padding: 60px 20px;
+    background: #ec1515;
+    position: relative;
+}
+
+.section-about .about-content, .section-services .services, .section-gallery .gallery {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-about .about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Animasi berputar */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.about-image {
+    width: 50%;
+    border-radius: 15px; /* Sesuaikan dengan border-radius untuk konsistensi */
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    background: #12ebeb;
+    padding: 10px;
+    margin: 0 auto; /* Pusatkan elemen */
+    display: block; /* Pastikan elemen dapat ditempatkan di tengah */
+    animation: rotate 10s linear infinite; /* Animasi putar */
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.about-text {
+    width: 50%;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    background: #12eb91;
+    padding: 10px;
+    margin: 0 auto; /* Pusatkan elemen */
+    display: block; /* Pastikan elemen dapat ditempatkan di tengah */
+    transition: transform 0.3s ease;
+    text-align: center;
+    animation: rotate 10s linear infinite; /* Animasi putar */
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Pastikan elemen dapat dibungkus jika ukuran layar kecil */
+}
+
+.icons {
+    display: flex;
+    flex-wrap: wrap; /* Agar ikon dapat dibungkus ke baris baru jika diperlukan */
+}
+
+.icon {
+    margin: 10px; /* Ruang antar ikon */
+    transition: transform 0.3s ease;
+}
+
+.icon img {
+    width: 70px; /* Ukuran ikon */
+}
+
+.icon:hover {
+    transform: scale(1.1); /* Memperbesar ikon saat hover */
+}
+
+.section-services {
+    background: linear-gradient(135deg, #ff5722 0%, #e64a19 100%);
+    color: #fff;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-box {
+    flex: 1 1 calc(30% - 20px); /* Slightly smaller width to fit better */
+    background: #fff;
+    color: #ff0000;
+    padding: 10px; /* Smaller padding */
+    border-radius: 15px; /* Smaller border-radius */
+    box-shadow: 0 0 8px rgba(0,0,0,0.15); /* Slightly smaller shadow */
+    transition: transform 0.3s ease;
+    text-align: center; /* Center the text for better alignment */
+    font-family: "Playwrite HR Lijeva", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+.service-box img {
+    width: 80%; /* Adjust the size of the image to fit better */
+    margin-bottom: 10px; /* Space between image and text */
+    border-radius: 15px; /* Match the border-radius of the box */
+}
+
+
+.service-box:hover {
+    transform: scale(1.05);
+}
+
+.section-gallery .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 80px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
+
+.section-contact {
+    background: #333;
+    color: #fff;
+}
+
+.section-contact form input, .section-contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.section-contact form button {
+    background: #ff5722;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.section-contact form button:hover {
+    background: #e64a19;
+}
+
+#copy-button {
+    background-color: #a17d72;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 9px;
+    margin-top: 10px;
+    font-family: "Playwrite HR Lijeva", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#copy-button:hover {
+    background-color: #e28710;
+}
+
+.social-media a {
+    margin: 0 10px;
+    position: center;
+}
+
+footer {
+    background: #12eadb;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    font-family: "Playwrite HR Lijeva", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer .quick-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+    font-family: "Playwrite HR Lijeva", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer .quick-links a:hover {
+    color: #ff5722;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
